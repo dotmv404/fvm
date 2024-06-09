@@ -1,0 +1,13 @@
+{
+  "name": "my-node-website",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}

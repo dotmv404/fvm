@@ -1,0 +1,153 @@
+{
+    "data": [
+      {
+        "id": 622,
+        "name": "LURPAK Danish Butter Unsalted 8g",
+        "code": "ARL0102",
+        "price": "3",
+        "image": "sbjPtpKjkgI58Jnc5f5ef7a86660c.jpg",
+        "stock": 13499,
+        "limit": 100,
+        "status": "Active",
+        "category_id": 15,
+        "deleted_at": null,
+        "created_at": "2020-09-14T04:55:04.000000Z",
+        "updated_at": "2024-03-24T08:32:49.000000Z",
+        "max_qty": 100,
+        "category": {
+          "id": 15,
+          "name": "Butter/Jam & Spread",
+          "created_at": "2020-05-09T05:48:38.000000Z",
+          "updated_at": "2020-05-09T05:48:38.000000Z"
+        }
+      },
+      {
+        "id": 26,
+        "name": "Lurpak Danish Butter Unsalted (100g)",
+        "code": "ARL0131",
+        "price": "29",
+        "image": "hBy241ZNPPSogHzw5eaae51d1a6e9.png",
+        "stock": 1718,
+        "limit": 24,
+        "status": "Active",
+        "category_id": 15,
+        "deleted_at": null,
+        "created_at": "2020-04-30T14:47:57.000000Z",
+        "updated_at": "2024-03-24T08:34:09.000000Z",
+        "max_qty": 24,
+        "category": {
+          "id": 15,
+          "name": "Butter/Jam & Spread",
+          "created_at": "2020-05-09T05:48:38.000000Z",
+          "updated_at": "2020-05-09T05:48:38.000000Z"
+        }
+      },
+      {
+        "id": 24,
+        "name": "Lurpak Danish Butter Unsalted (200g)",
+        "code": "ARL0141",
+        "price": "56",
+        "image": "vA7AdayXltqeG7i15ec318afd333d.jpg",
+        "stock": 725,
+        "limit": 20,
+        "status": "Active",
+        "category_id": 15,
+        "deleted_at": null,
+        "created_at": "2020-04-30T14:35:36.000000Z",
+        "updated_at": "2024-03-24T08:34:38.000000Z",
+        "max_qty": 20,
+        "category": {
+          "id": 15,
+          "name": "Butter/Jam & Spread",
+          "created_at": "2020-05-09T05:48:38.000000Z",
+          "updated_at": "2020-05-09T05:48:38.000000Z"
+        }
+      },
+      {
+        "id": 25,
+        "name": "Lurpak Spreadable Butter Unsalted 250g",
+        "code": "ARL0151",
+        "price": "54",
+        "image": "9ZuIpaUYeD5ax9XW5eaae36f064f8.png",
+        "stock": 320,
+        "limit": 12,
+        "status": "Active",
+        "category_id": 15,
+        "deleted_at": null,
+        "created_at": "2020-04-30T14:40:47.000000Z",
+        "updated_at": "2024-03-24T08:35:41.000000Z",
+        "max_qty": 12,
+        "category": {
+          "id": 15,
+          "name": "Butter/Jam & Spread",
+          "created_at": "2020-05-09T05:48:38.000000Z",
+          "updated_at": "2020-05-09T05:48:38.000000Z"
+        }
+      },
+      {
+        "id": 466,
+        "name": "Arla Pro Unsalted Butter (5Kg)",
+        "code": "ARL0195",
+        "price": "1100",
+        "image": "2y4VNnKl8b6i3H1q5ef6eeaa45872.png",
+        "stock": 38,
+        "limit": 1,
+        "status": "Active",
+        "category_id": 15,
+        "deleted_at": null,
+        "created_at": "2020-06-27T07:00:58.000000Z",
+        "updated_at": "2024-03-24T08:36:50.000000Z",
+        "max_qty": 1,
+        "category": {
+          "id": 15,
+          "name": "Butter/Jam & Spread",
+          "created_at": "2020-05-09T05:48:38.000000Z",
+          "updated_at": "2020-05-09T05:48:38.000000Z"
+        }
+      },
+      {
+        "id": 18,
+        "name": "Arla Sandwich Slices Original 26% (200g)",
+        "code": "ARL0221",
+        "price": "41",
+        "image": "TI1mhfyR6dWfFzVd5e9f06210a864.png",
+        "stock": 56,
+        "limit": 6,
+        "status": "Active",
+        "category_id": 6,
+        "deleted_at": null,
+        "created_at": "2020-04-21T14:41:37.000000Z",
+        "updated_at": "2024-03-24T08:37:23.000000Z",
+        "max_qty": 6,
+        "category": {
+          "id": 6,
+          "name": "Cheese",
+          "created_at": "2020-04-21T07:18:25.000000Z",
+          "updated_at": "2020-04-21T07:18:25.000000Z"
+        }
+      },
+      {
+        "id": 19,
+        "name": "Arla Burger Slices - Cheddar Taste (200g)",
+        "code": "ARL0222",
+        "price": "41",
+        "image": "munc79wB6Ftqzpgj5e9f070a49f3a.png",
+        "stock": 12,
+        "limit": 6,
+        "status": "Active",
+        "category_id": 6,
+        "deleted_at": null,
+        "created_at": "2020-04-21T14:45:30.000000Z",
+        "updated_at": "2024-03-24T08:42:14.000000Z",
+        "max_qty": 6,
+        "category": {
+          "id": 6,
+          "name": "Cheese",
+          "created_at": "2020-04-21T07:18:25.000000Z",
+          "updated_at": "2020-04-21T07:18:25.000000Z"
+        }
+      }
+      
+    ],
+    "message": "success"
+  }
