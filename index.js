@@ -187,7 +187,10 @@ function renderProducts(apiUrl, products, renderProduct) {
 }
 
 // Serve the home page
-app.use(express.static('public'));
+app.get('/', (req, res) => {
+    // Use path.join to construct the absolute path to the index.html file
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
