@@ -1,0 +1,155 @@
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .search-form input[type="text"] {
+        width: 100%; /* Make the input field full width on smaller screens */
+    }
+
+    .search-form button {
+        width: 100%; /* Make the button full width on smaller screens */
+        margin-top: 0.5rem; /* Add some spacing between input and button */
+    }
+
+    .product-item {
+        width: calc(50% - 2rem); /* Make product items occupy half the width of the screen with some margin */
+    }
+}
+
+/* Add media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 2rem); /* Make product items occupy full width of the screen with some margin */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Base styles */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .search-form input[type="text"] {
+        width: 100%; /* Take up full width on smaller screens */
+        border-radius: 5px; /* Adjust border-radius for full width */
+    }
+    
+    .search-form button {
+        border-radius: 5px; /* Adjust border-radius for full width */
+    }
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.api-url {
+    margin-bottom: 2rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 0.5rem 0;
+}
+
+.product-info h3 {
+    margin: 0.5rem 0;
+}
+
+.product-info p {
+    margin: 0.2rem 0;
+}
+.api-section {
+    margin-bottom: 2rem;
+}
+
+.api-url {
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.api-url p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.api-url a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.api-url a:hover {
+    text-decoration: underline;
+}
