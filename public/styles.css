@@ -1,139 +1,38 @@
-
-/* Add media query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .search-form input[type="text"] {
-        width: 100%; /* Make the input field full width on smaller screens */
-    }
-
-    .search-form button {
-        width: 100%; /* Make the button full width on smaller screens */
-        margin-top: 0.5rem; /* Add some spacing between input and button */
-    }
-
-    .product-item {
-        width: calc(50% - 2rem); /* Make product items occupy half the width of the screen with some margin */
-    }
-}
-
-/* Add media query for even smaller screens */
-@media only screen and (max-width: 480px) {
-    .product-item {
-        width: calc(100% - 2rem); /* Make product items occupy full width of the screen with some margin */
-    }
-}
-
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #b2d8d8;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #006666;
+    color: #ecf0f1;
+    padding: 1.5rem;
     text-align: center;
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
 }
-
-/* Base styles */
-.search-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.search-form input[type="text"] {
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 300px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.search-form button {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: #45a049;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .search-form input[type="text"] {
-        width: 100%; /* Take up full width on smaller screens */
-        border-radius: 5px; /* Adjust border-radius for full width */
-    }
-    
-    .search-form button {
-        border-radius: 5px; /* Adjust border-radius for full width */
-    }
-}
-
 
 main {
     padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.api-url {
-    margin-bottom: 2rem;
-}
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.product-item {
-    background: #fff;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.product-item:hover {
-    transform: scale(1.05);
-}
-
-.product-item img {
-    width: 100%;
-    height: auto;
-}
-
-.product-info {
-    padding: 0.5rem 0;
-}
-
-.product-info h3 {
-    margin: 0.5rem 0;
-}
-
-.product-info p {
-    margin: 0.2rem 0;
-}
 .api-section {
     margin-bottom: 2rem;
 }
 
 .api-url {
-    background-color: #eee;
+    background-color: #b2d8d8;
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -146,10 +45,147 @@ main {
 }
 
 .api-url a {
-    color: #007BFF;
+    color: #b2d8d8;
     text-decoration: none;
 }
 
 .api-url a:hover {
     text-decoration: underline;
 }
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search-form input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid #008080;
+    background-color: #008080;
+    color: white;
+
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #008080;
+    background-color: #008080;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #008080;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.api-price {
+    background-color: #008080;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.product-item {
+    background: #006666;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.product-info {
+    padding: 0.5rem 0;
+    
+}
+
+.product-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #b2d8d8;
+}
+
+.product-info p {
+    margin: 0.2rem 0;
+    color: #e6e6e6;
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.logo-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo-grid img {
+    width: 100px;
+    height: auto;
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form input[type="text"], .search-form button {
+        width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+    }
+
+    .product-item {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product-item {
+        flex: 1 1 calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+    }
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; /* Center the image */
+  }
